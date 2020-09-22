@@ -1,0 +1,9 @@
+.videoList {
+    height: 100vh;
+    width: 90%;
+    flex-direction: column;
+    // overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll !important;
+   
+}

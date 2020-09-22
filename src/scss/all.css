@@ -1,0 +1,191 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.app {
+  background-color: #f9f9f9;
+  overflow: hidden;
+}
+
+.app__gridContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.app__videoDetail {
+  padding-top: 0 !important;
+}
+
+.app__videoList {
+  padding: 0px !important;
+}
+
+.MuiPaper-root {
+  background-color: #f9f9f9;
+}
+
+.searchBar {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.searchBar__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.searchBar__left .MenuIcon {
+  padding: 0.5rem;
+  color: #444545;
+}
+
+.searchBar__left img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100px;
+  height: 70px;
+}
+
+.searchBar__center {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.searchBar__center form {
+  background-color: #f8f8f8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 20%;
+  border: 1px solid #aaaaaa;
+}
+
+.searchBar__center input {
+  border: none;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 0.5rem;
+  flex-grow: 1;
+  outline: none;
+}
+
+.searchBar__center__searchBtn {
+  display: block;
+  padding: 2px 15px;
+  background-color: #f8f8f8;
+  border-left: 1px solid #aaaaaa;
+}
+
+.searchBar__center .MuiSvgIcon-root {
+  color: #aaaaaa;
+}
+
+.searchBar__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #444545;
+}
+
+.searchBar__right > .MuiSvgIcon-root {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.searchBar__right__avatar {
+  margin-right: 10px;
+}
+
+.videoDetail .MuiGrid-spacing-xs-10 > .MuiGrid-item {
+  padding-top: 0px !important;
+}
+
+.videoDetail__video {
+  width: auto;
+  height: 450px;
+  padding: 0 20px 20px 20px !important;
+}
+
+.videoDetail__info {
+  padding: 20px;
+}
+
+.videoDetail__info > h4 {
+  font-size: 25px;
+  margin-bottom: 1rem;
+}
+
+.videoDetail__publisher {
+  font-size: 15px !important;
+  font-weight: bold !important;
+}
+
+.videoItem {
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.videoItem__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0.5rem;
+  -webkit-transition: 450ms;
+  transition: 450ms;
+}
+
+.videoItem__card:hover {
+  background-color: lightgray;
+}
+
+.videoItem__card > img {
+  max-height: 120px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 10px;
+}
+
+.videoItem__title {
+  font-size: 13px;
+}
+
+.videoItem__channelTitle {
+  color: #444545;
+  font-weight: 500;
+  font-size: 10px;
+}
+
+.videoList {
+  height: 100vh;
+  width: 90%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: scroll !important;
+}
+/*# sourceMappingURL=all.css.map */

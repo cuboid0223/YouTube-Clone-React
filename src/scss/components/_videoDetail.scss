@@ -1,0 +1,29 @@
+.videoDetail {
+
+
+    & .MuiGrid-spacing-xs-10>.MuiGrid-item {
+        padding-top: 0px !important;
+
+    }
+
+
+    &__video {
+        width: auto;
+        height: 450px;
+        padding: 0 20px 20px 20px !important;
+    }
+
+    &__info {
+        padding: 20px;
+
+        &>h4 {
+            font-size: 25px;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__publisher {
+        font-size: 15px !important;
+        font-weight: bold !important;
+    }
+}
