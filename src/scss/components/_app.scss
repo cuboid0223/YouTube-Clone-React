@@ -9,11 +9,11 @@
 
     }
 
-    &__flex-container {
-        @include iphone {
-            flex-direction: column;
-        }
-    }
+    // &__flex-container {
+    //     @include iphone {
+    //         flex-direction: column;
+    //     }
+    // }
 
     &__videoDetail {
         padding-top: 0 !important;

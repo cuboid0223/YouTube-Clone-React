@@ -43,16 +43,16 @@ class App extends React.Component {
         <Grid className="app__gridContainer" container>
           <Grid item xs={12}>
             <Grid container spacing={10} className='app__flex-container'>
-            
+
               <Grid item xs={12}>
                 <SearchBar onFormSubmit={this.handleSubmit} />
               </Grid>
 
-              <Grid item xs={8} className='app__videoDetail'>
+              <Grid item sm={8} xs={12} className='app__videoDetail'>
                 <VideoDetail video={selectedVideo} />
               </Grid>
 
-              <Grid item xs={4} className='app__videoList'>
+              <Grid item sm={4} xs={12} className='app__videoList'>
                 <VideoList videos={videos} onVideoSelect={this.onVideoSelect} />
               </Grid>
 

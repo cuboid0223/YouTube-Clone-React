@@ -48,10 +48,18 @@
             padding: 2px 15px;
             background-color: #f8f8f8;
             border-left: 1px solid rgb(170, 170, 170);
+
+            @include iphone {
+                display: none;
+            }
         }
 
         & .MuiSvgIcon-root {
             color: rgb(170, 170, 170);
+
+            @include iphone {
+                display: none;
+            }
         }
     }
 
@@ -60,6 +68,10 @@
         display: flex;
         align-items: center;
         color: #444545;
+
+        @include iphone {
+            display: none;
+        }
 
         // flex: .3;
         &>.MuiSvgIcon-root {
