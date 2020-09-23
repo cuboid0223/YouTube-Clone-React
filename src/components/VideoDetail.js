@@ -1,9 +1,11 @@
 import React from 'react'
 import { Paper, Typography } from "@material-ui/core";
 const VideoDetail = ({ video }) => {
+
     if (!video) return <div>loading....</div>;
     console.log(video.id.videoId)
     const videoSrc = `https://www.youtube.com/embed/${video.id.videoId}`
+    
   return (
     <div className="videoDetail">
       <Paper elevation={0} className="videoDetail__video">

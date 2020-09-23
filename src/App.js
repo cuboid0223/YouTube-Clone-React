@@ -22,12 +22,12 @@ class App extends React.Component {
     const response = await youtube.get("search", {
       params: {
         part: "snippet",
-        maxResults: 100,
+        maxResults: 20,
         key: "AIzaSyB0xTIo8dLxjuYf09JzzvaXdkDG-9y_K9w",
         q: searchTerm,
       },
     });
-    console.log(response.data.items);
+    console.log("response", response.data.items);
     this.setState({
       videos: response.data.items,
       selectedVideo: response.data.items[0],
@@ -42,7 +42,8 @@ class App extends React.Component {
       <div className="app">
         <Grid className="app__gridContainer" container>
           <Grid item xs={12}>
-            <Grid container spacing={10}>
+            <Grid container spacing={10} className='app__flex-container'>
+            
               <Grid item xs={12}>
                 <SearchBar onFormSubmit={this.handleSubmit} />
               </Grid>

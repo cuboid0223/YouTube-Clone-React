@@ -1,11 +1,19 @@
 .app {
     background-color: #f9f9f9;
     overflow: hidden;
+
     &__gridContainer {
         display: flex;
         justify-content: center;
+
+
     }
 
+    &__flex-container {
+        @include iphone {
+            flex-direction: column;
+        }
+    }
 
     &__videoDetail {
         padding-top: 0 !important;
