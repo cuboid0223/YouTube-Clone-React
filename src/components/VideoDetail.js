@@ -5,7 +5,7 @@ const VideoDetail = ({ video }) => {
     if (!video) return <div>loading....</div>;
     console.log(video.id.videoId)
     const videoSrc = `https://www.youtube.com/embed/${video.id.videoId}`
-    
+
   return (
     <div className="videoDetail">
       <Paper elevation={0} className="videoDetail__video">
@@ -20,11 +20,15 @@ const VideoDetail = ({ video }) => {
       <Paper elevation={0} className="videoDetail__info">
         <Typography variant="h4">{video.snippet.title}</Typography>
         <hr />
-        <Typography variant="h6" className="videoDetail__publisher">
-          {video.snippet.channelTitle}
-        </Typography>
+        <div className="videoDetail__channel-box">
+          <Typography variant="h6" className="videoDetail__publisher">
+            {video.snippet.channelTitle}
+          </Typography>
+          <button>訂閱</button>
+        </div>
 
-        <Typography variant="subtitle2">{video.snippet.description}</Typography>
+        <Typography className='videoDetail__description' variant="subtitle2">{video.snippet.description}</Typography>
+        <hr />
       </Paper>
     </div>
   );

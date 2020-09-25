@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import MenuIcon from "@material-ui/icons/Menu";
-import { Button, Avatar } from "@material-ui/core";
+import { Button, Avatar, Modal } from "@material-ui/core";
 import SearchIcon from "@material-ui/icons/Search";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import AppsIcon from "@material-ui/icons/Apps";
@@ -38,7 +38,7 @@ export class SearchBar extends Component {
               placeholder="搜尋"
               onChange={this.handleChange}
             />
-            <Button className="searchBar__center__searchBtn">
+            <Button className="searchBar__center__searchBtn" onClick={this.handleSubmit}>
               <SearchIcon />
             </Button>
           </form>
